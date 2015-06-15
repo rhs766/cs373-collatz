@@ -30,7 +30,32 @@ def collatz_eval (i, j) :
     return the max cycle length of the range [i, j]
     """
     # <your code>
-    return 1
+    assert type(i) is int
+    assert type(j) is int
+    assert i > 0
+    assert i < 1000000
+    assert j > 0
+    assert j < 1000000
+    if i > j:
+        temp = i
+        i = j
+        j = temp
+    max = 0
+    len = 1
+    for x in range(i, j+1):
+        while x > 1:
+            if x%2 == 0:
+                x /= 2
+                len += 1
+            else:
+                x = 3*x + 1
+                len += 1
+        if len > max:
+            max = len
+        len = 1
+    assert max > 0
+    assert type(max) is int
+    return max
 
 # -------------
 # collatz_print

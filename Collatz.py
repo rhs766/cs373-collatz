@@ -10,6 +10,9 @@
 # collatz_read
 # ------------
 
+global d
+d = {}
+
 def collatz_read (s) :
     """
     read two ints
@@ -40,22 +43,30 @@ def collatz_eval (i, j) :
         temp = i
         i = j
         j = temp
-    max = 0
-    len = 1
+    assert i <= j
+    mlen = 0
+    clen = 1
     for x in range(i, j+1):
+        tmp = x
         while x > 1:
-            if x%2 == 0:
-                x /= 2
-                len += 1
+            if x in d:
+                clen = clen + d[x] - 1
+                x = 1
             else:
-                x = 3*x + 1
-                len += 1
-        if len > max:
-            max = len
-        len = 1
-    assert max > 0
-    assert type(max) is int
-    return max
+                if x%2 == 0:
+                    x = x >> 1
+                    clen += 1
+                else:
+                    x = x + (x >> 1) + 1
+                    clen += 2
+        if tmp not in d:
+            d[tmp] = clen
+        if clen > mlen:
+            mlen = clen
+        clen = 1
+    assert mlen > 0
+    assert type(mlen) is int
+    return mlen
 
 # -------------
 # collatz_print

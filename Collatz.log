@@ -1,0 +1,59 @@
+commit dba9db889581d39c9b6d9853231d0012da248cfa
+Author: Richard Shin <rshin@cs.utexas.edu>
+Date:   Mon Jun 15 19:44:45 2015 -0500
+
+    Code accepted by sphere, fixed issue #17
+
+commit 418a83412b3a9e536c5dbee0ec5327389c414738
+Author: Richard Shin <rshin@cs.utexas.edu>
+Date:   Mon Jun 15 19:35:16 2015 -0500
+
+    implemented the simplest possible cache, fixed issue #16
+
+commit b103dd853526fae1809ad1439e94cc9b23386cc2
+Author: Richard Shin <rshin@cs.utexas.edu>
+Date:   Mon Jun 15 17:15:08 2015 -0500
+
+    Code accepted by sphere as is, fixed issue #14
+
+commit 9c57831ff59092cb8821d757b67d266d25d09637
+Author: Richard Shin <rshin@cs.utexas.edu>
+Date:   Mon Jun 15 17:02:30 2015 -0500
+
+    implemented simplest solution in collatz_eval() and fixed unittest names, fixed issue #13
+
+commit 6e030f8514c60de1b736e1a6aa220417cd331250
+Author: Richard Shin <rshin@cs.utexas.edu>
+Date:   Mon Jun 15 16:22:47 2015 -0500
+
+    wrote more unit tests with expected failures, fixed issue #12
+
+commit 1390d213fdf2dc46a7d0fe672982797d72cbba24
+Author: Richard Shin <rshin@cs.utexas.edu>
+Date:   Mon Jun 15 16:04:08 2015 -0500
+
+    fixed unit tests and confirmed failures, fixed issue #11
+
+commit c9b0af0b0316f114246d4d1cc02ac977593ee7da
+Author: Richard Shin <rshin@cs.utexas.edu>
+Date:   Mon Jun 15 15:56:20 2015 -0500
+
+    added sudo: required to travis file
+
+commit 4a0af6ab19f8cc38c269a9300ae2e4cb27a48ac6
+Author: Richard Shin <rshin@cs.utexas.edu>
+Date:   Mon Jun 15 15:45:28 2015 -0500
+
+    added travis file since it was missing
+
+commit 7287add25dac4aa6a981ecd7c6a452e0da0211aa
+Author: Richard Shin <rshin@cs.utexas.edu>
+Date:   Mon Jun 15 15:35:19 2015 -0500
+
+    did make test and fixed issue #9
+
+commit 40d5d528200b7c091458325875d95fb26f26c89c
+Author: Richard Shin <rshin@cs.utexas.edu>
+Date:   Mon Jun 15 15:24:19 2015 -0500
+
+    initial commit
